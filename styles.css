@@ -1,0 +1,171 @@
+body {
+    background: #333;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+header h1{
+    padding-top: 10px;
+}
+.hero-section {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+.hero-gradient {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #333 100%);
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px #000;
+}
+.hero-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0066cc;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+.hero-button:hover {
+    background-color: #005bb5;
+}
+.hero-button.contact-button {
+    margin-left: 10px;
+    background-color: #0066cc;
+}
+.hero-button.contact-button:hover {
+    background-color: #005bb5;
+}
+.section {
+    padding: 20px;
+    text-align: center;
+    background-color: #444;
+    border-radius: 8px;
+    margin: 10px 0;
+    height: 100%;
+}
+.section .icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+.section .card-title {
+    font-size: 24px;
+    color: #ccc;
+}
+.section .card-text {
+    color: #ddd;
+}
+.container-sections {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.container-sections .col-lg-4,
+.container-sections .col-md-6 {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+}
+@media (max-width: 1000px) {
+    .hero-text {
+        visibility: hidden;
+    }
+    .container-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section {
+        max-width: 100%;
+    }
+}
+@media (max-width: 749px) {
+    .hero-text {
+        visibility: hidden;
+    }
+    .container-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+    .section {
+        max-width: 100%;
+    }
+}
+header h1 {
+    font-family: "Anton SC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.gallery-container {
+    position: relative;
+    max-width: 80%;
+    height: 500px; /* Stała wysokość kontenera */
+    margin: auto;
+    text-align: center;
+    overflow: hidden; /* Ukrycie elementów wykraczających poza kontener */
+}
+.gallery {
+    position: relative;
+    height: 100%;
+}
+.gallery img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%;
+    width: auto;
+    border-radius: 8px;
+    display: none;
+}
+.gallery img.active {
+    display: block;
+}
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.nav-button.left {
+    left: 0;
+}
+.nav-button.right {
+    right: 0;
+}

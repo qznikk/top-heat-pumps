@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+
+    <title>TOP HEAT PUMPS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="text-white text-center py-2">
+        <h1>TOP HEAT PUMPS</h1>
+    </header>
+    <div class="hero-section">
+        <div class="hero-image-container">
+            <img src="/photos/tlo.png" class="hero-image" alt="Happy Family with Air Conditioning">
+            <div class="hero-overlay"></div>
+            <div class="hero-gradient"></div>
+        </div>
+        <div class="hero-text">
+            Skorzystaj z naszych usług i ciesz się komfortem!
+            <br>
+            <button class="hero-button" onclick="document.getElementById('services').scrollIntoView({behavior: 'smooth'})">Dowiedz się więcej</button>
+            <button class="hero-button contact-button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Kontakt</button>
+        </div>
+    </div>
+    <section id="services" class="container container-sections my-5">
+        <div class="col-lg-4 col-md-6">
+            <div class="section">
+                <i class="fas fa-snowflake icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Montaż klimatyzacji</h5>
+                    <p class="card-text">Profesjonalny montaż klimatyzacji oraz darmowa wycena. Nasza firma oferuje kompleksowe usługi instalacyjne, dbając o każdy szczegół, aby zapewnić komfort i efektywność energetyczną w Twoim domu lub biurze.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="section">
+                <i class="fas fa-fire icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Montaż pomp ciepła</h5>
+                    <p class="card-text">Oferujemy montaż pomp ciepła oraz darmową wycenę. Zapewniamy nowoczesne rozwiązania grzewcze, które są ekologiczne i ekonomiczne. Doradzimy Ci najlepsze opcje dostosowane do Twoich potrzeb.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+            <div class="section">
+                <i class="fas fa-water icon"></i>
+                <div class="card-body">
+                    <h5 class="card-title">Instalacje</h5>
+                    <p class="card-text">Darmowa wycena i montaż: fotowoltaika, wentylacja, instalacje hydrauliczne, elektryczne, chłodnicze. Nasza oferta obejmuje pełen zakres usług instalacyjnych, dzięki którym Twój dom będzie bardziej energooszczędny i przyjazny środowisku.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sekcja O nas -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="section">
+                    <div class="card-body">
+                        <h5 class="card-title">O nas</h5>
+                        <p class="card-text">Jesteśmy firmą zajmującą się montażem i doborem urządzeń klimatyzacyjnych, pomp ciepła, systemów fotowoltaicznych oraz różnorodnych instalacji od ponad dekady. Dzięki naszemu doświadczeniu i profesjonalizmowi, zapewniamy najwyższą jakość usług i zadowolenie klientów.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Galeria -->
+    <section class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="section">
+                    <h5 class="card-title">Galeria</h5>
+                    <div class="gallery-container">
+                        <div class="gallery">
+                            <img src="/topinstal zdj/klima czarna.jpeg" alt="Photo 1" class="active">
+                            <img src="/topinstal zdj/klima czarna zewnątrz.jpeg" alt="Photo 2">
+                            <img src="/topinstal zdj/klima grodziec.jpeg" alt="Photo 3">
+                            <img src="/topinstal zdj/pompa.jpg" alt="Photo 4">
+                            <img src="/topinstal zdj/komorowice wewnatrz.jpeg" alt="Photo 5">
+                            <img src="/topinstal zdj/komorowice zewnatrz 2.jpeg" alt="Photo 6">
+                            <img src="/topinstal zdj/własna pompa 2.jpeg" alt="Photo 7">
+                            <img src="/topinstal zdj/własna pompa.jpeg" alt="Photo 8">
+                        </div>
+                        <button class="nav-button left" onclick="changeSlide(-1)">&#10094;</button>
+                        <button class="nav-button right" onclick="changeSlide(1)">&#10095;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Sekcja Kontakt -->
+    <section id="contact" class="container my-5">
+        <div class="row">
+            <div class="col-12">
+                <div class="section">
+                    <div class="card-body">
+                        <h5 class="card-title">Kontakt</h5>
+                        <p class="card-text">
+                            <i class="fas fa-phone"></i> +48 785 582 323<br>
+                            <i class="fas fa-envelope"></i> topinstal.rk@gmail.com
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-white text-center py-3">
+        <p>&copy; 2024 Top Heat Pumps. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <!-- Bootstrap JS i zależności -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Gallery script -->
+    <script src="main.js"></script>
+</body>
+</html>
